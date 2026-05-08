@@ -2,7 +2,7 @@ import tmsImage from "../assets/projects/tool-monitoring-system.png";
 import cardihoopImage from "../assets/projects/cardihoop.jpeg";
 import sediImage from "../assets/projects/sedi-dashboard.jpg";
 import soilImage from "../assets/projects/soil-monitoring.jpeg";
-import bmiImage from "../assets/projects/bmi-kiosk.jpeg";
+// import bmiImage from "../assets/projects/bmi-kiosk.jpeg";
 
 export const projects = [
   {
@@ -41,13 +41,13 @@ export const projects = [
       "A soil health monitoring system using RS485 sensors, SIM-based MQTT communication, threshold alerts, and web-based data visualization.",
     tags: ["RS485", "MQTT", "PHP", "MySQL", "4G"],
   },
-  {
-    title: "BMI Monitoring Kiosk",
-    type: "Embedded Kiosk System",
-    image: bmiImage,
-    // demoLink: "https://jb-bmi-kiosk.vercel.app",
-    description:
-      "An automated BMI kiosk using ESP32, VL53L1X height sensors, HX711 load cell, Raspberry Pi kiosk interface, and admin dashboard.",
-    tags: ["ESP32", "Raspberry Pi", "Sensors", "Dashboard"],
-  },
+  // {
+  //   title: "BMI Monitoring Kiosk",
+  //   type: "Embedded Kiosk System",
+  //   image: bmiImage,
+  //   // demoLink: "https://jb-bmi-kiosk.vercel.app",
+  //   description:
+  //     "An automated BMI kiosk using ESP32, VL53L1X height sensors, HX711 load cell, Raspberry Pi kiosk interface, and admin dashboard.",
+  //   tags: ["ESP32", "Raspberry Pi", "Sensors", "Dashboard"],
+  // },
 ];

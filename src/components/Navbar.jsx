@@ -22,9 +22,9 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </div>
 
-        <a href="/resume.pdf" className="resume-btn">
+        {/* <a href="/resume.pdf" className="resume-btn">
           Resume Download
-        </a>
+        </a> */}
       </nav>
     </header>
   );

@@ -1,4 +1,4 @@
-import companyWebsiteImage from "../assets/projects/company-website.jpeg";
+import companyWebsiteImage from "../assets/projects/website.png";
 import landingPageImage from "../assets/projects/landing-page.jpeg";
 import serviceWebsiteImage from "../assets/projects/service-website.jpeg";
 
@@ -7,7 +7,7 @@ export const businessWebsites = [
     title: "Company Profile Website",
     type: "Business Website",
     image: companyWebsiteImage,
-    demoLink: "https://your-company-website-demo.vercel.app",
+    demoLink: "https://innovation-central-ph-website.vercel.app/",
     description:
       "A responsive company profile website designed to present business information, services, project highlights, and contact details in a clean and professional layout.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
