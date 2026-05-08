@@ -1,5 +1,5 @@
 import companyWebsiteImage from "../assets/projects/website.png";
-import landingPageImage from "../assets/projects/landing-page.jpeg";
+import landingPageImage from "../assets/projects/landing-page.png";
 import serviceWebsiteImage from "../assets/projects/service-website.jpeg";
 
 export const businessWebsites = [
