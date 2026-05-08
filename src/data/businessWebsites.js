@@ -16,7 +16,7 @@ export const businessWebsites = [
     title: "Service Landing Page",
     type: "Landing Page",
     image: landingPageImage,
-    demoLink: "https://your-landing-page-demo.vercel.app",
+    demoLink: "https://react-website-development.vercel.app/",
     description:
       "A focused landing page built to showcase services, communicate value, and guide visitors toward inquiry or contact actions.",
     tags: ["Web Design", "Frontend", "UI Design", "Mobile Friendly"],
