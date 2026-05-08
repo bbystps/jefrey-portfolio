@@ -1,9 +1,65 @@
+import {
+  FaReact,
+  FaAws,
+  FaCloud,
+  FaCode,
+  FaDesktop,
+  FaRocket,
+  FaServer,
+  FaWifi,
+  FaArrowRight,
+  FaCheckCircle,
+} from "react-icons/fa";
+
 function Hero() {
+  const metrics = [
+    {
+      icon: <FaDesktop />,
+      label: "Websites",
+      value: "Company Sites",
+    },
+    {
+      icon: <FaReact />,
+      label: "Frontend",
+      value: "React UI",
+    },
+    {
+      icon: <FaWifi />,
+      label: "IoT Systems",
+      value: "MQTT Ready",
+    },
+    {
+      icon: <FaAws />,
+      label: "Deployment",
+      value: "AWS / Linux",
+    },
+  ];
+
+  const focusItems = [
+    {
+      label: "Responsive Web Design",
+      value: 95,
+    },
+    {
+      label: "React Frontend Development",
+      value: 90,
+    },
+    {
+      label: "IoT Dashboard Integration",
+      value: 90,
+    },
+    {
+      label: "MQTT / Cloud Deployment",
+      value: 85,
+    },
+  ];
+
   return (
     <section id="home" className="hero section">
       <div className="container hero-grid">
         <div className="hero-content">
           <p className="status-pill">
+            <FaCheckCircle />
             Available for React, Web Development, and IoT Dashboard Projects
           </p>
 
@@ -19,9 +75,27 @@ function Hero() {
             embedded systems experience.
           </p>
 
+          <div className="hero-highlights">
+            <div>
+              <FaCode />
+              <span>Clean React UI</span>
+            </div>
+
+            <div>
+              <FaCloud />
+              <span>Cloud Ready</span>
+            </div>
+
+            <div>
+              <FaServer />
+              <span>IoT Dashboard</span>
+            </div>
+          </div>
+
           <div className="hero-actions">
             <a href="#projects" className="primary-btn">
               View Projects
+              <FaArrowRight />
             </a>
 
             <a href="#business-websites" className="secondary-btn">
@@ -30,42 +104,71 @@ function Hero() {
           </div>
         </div>
 
-        <div className="dashboard-card">
+        <div className="dashboard-card hero-preview-card">
+          <div className="dashboard-glow"></div>
+
           <div className="dashboard-header">
-            <h3>Web + IoT Project Preview</h3>
-            <span>Available</span>
+            <div>
+              <p className="dashboard-label">Portfolio Preview</p>
+              <h3>Web + IoT Project Dashboard</h3>
+            </div>
+
+            <span>
+              <FaRocket />
+              Available
+            </span>
           </div>
 
           <div className="metrics-grid">
-            <MetricCard label="Websites" value="Company Sites" />
-            <MetricCard label="Frontend" value="React UI" />
-            <MetricCard label="IoT Systems" value="MQTT Ready" />
-            <MetricCard label="Deployment" value="AWS / Linux" />
+            {metrics.map((item, index) => (
+              <MetricCard
+                key={index}
+                icon={item.icon}
+                label={item.label}
+                value={item.value}
+              />
+            ))}
           </div>
 
           <div className="chart-card">
-            <p>Project Focus</p>
+            <div className="chart-title">
+              <p>Project Focus</p>
+              <span>2026</span>
+            </div>
 
             <div className="focus-list">
-              <div>
-                <span>Responsive Web Design</span>
-                <strong>95%</strong>
-              </div>
+              {focusItems.map((item, index) => (
+                <div className="focus-item" key={index}>
+                  <div className="focus-info">
+                    <span>{item.label}</span>
+                    <strong>{item.value}%</strong>
+                  </div>
 
-              <div>
-                <span>React Frontend Development</span>
-                <strong>90%</strong>
-              </div>
+                  <div className="progress-track">
+                    <div
+                      className="progress-fill"
+                      style={{ width: `${item.value}%` }}
+                    ></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-              <div>
-                <span>IoT Dashboard Integration</span>
-                <strong>90%</strong>
-              </div>
+          <div className="dashboard-footer">
+            <div>
+              <span></span>
+              Live UI
+            </div>
 
-              <div>
-                <span>MQTT / Cloud Deployment</span>
-                <strong>85%</strong>
-              </div>
+            <div>
+              <span></span>
+              MQTT Ready
+            </div>
+
+            <div>
+              <span></span>
+              Responsive
             </div>
           </div>
         </div>
@@ -74,11 +177,15 @@ function Hero() {
   );
 }
 
-function MetricCard({ label, value }) {
+function MetricCard({ icon, label, value }) {
   return (
     <div className="metric-card">
-      <p>{label}</p>
-      <h4>{value}</h4>
+      <div className="metric-icon">{icon}</div>
+
+      <div>
+        <p>{label}</p>
+        <h4>{value}</h4>
+      </div>
     </div>
   );
 }
