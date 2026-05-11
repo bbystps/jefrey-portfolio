@@ -1,6 +1,6 @@
 import companyWebsiteImage from "../assets/projects/website.png";
 import landingPageImage from "../assets/projects/landing-page.png";
-import serviceWebsiteImage from "../assets/projects/service-website.jpeg";
+import serviceWebsiteImage from "../assets/projects/service-website.png";
 
 export const businessWebsites = [
   {
@@ -25,7 +25,7 @@ export const businessWebsites = [
     title: "Business Portfolio Website",
     type: "Corporate Web Development",
     image: serviceWebsiteImage,
-    demoLink: "https://your-business-portfolio-demo.vercel.app",
+    demoLink: "https://business-portfolio-website-chi.vercel.app/",
     description:
       "A modern website layout for presenting business solutions, company background, service categories, and customer-facing information.",
     tags: ["HTML", "CSS", "JavaScript", "Business Website"],
