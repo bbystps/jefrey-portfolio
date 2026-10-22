@@ -1,16 +1,47 @@
-# React + Vite
+# Jefrey Bonyad Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React/Vite portfolio featuring system integration, MQTT, Python, REST APIs, embedded systems, monitoring and device-control case studies.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Use Node.js 22.12+ (or another version supported by Vite 8).
 
-## React Compiler
+```sh
+npm ci
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Open the local URL printed by Vite. The site starts at `/`; no special HTML filename or nested project folder is required.
 
-## Expanding the ESLint configuration
+```sh
+npm run lint
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Vercel
+
+This repository is the deployable project root. Keep the existing GitHub connection and use:
+
+- Framework preset: Vite
+- Root directory: repository root (leave blank or use `.`)
+- Build command: `npm run build`
+- Output directory: `dist`
+
+The build creates `dist/index.html`. No environment variables or backend service are needed to display the portfolio. Commit and push the changes to trigger your existing Vercel Git deployment.
+
+## Editing
+
+- `src/App.jsx`: page layout, hero, navigation, search, filters, case studies and experience.
+- `src/main.jsx`: React entry point.
+- `src/data.js`: project content and capability groups.
+- `src/styles.css`: main layout and print styles.
+- `src/hero-studio.css`: responsive portrait hero.
+- `public/evidence/`: project screenshots, attributed product-context image and portrait.
+- `public/Integration_Developer_Resume.pdf`: linked resume.
+- `Portfolio_Project_Audit.md`: project evidence and rankings.
+- `Portfolio_Changes.md`: redesign history and repository migration.
+
+The previous portfolio has been replaced at the user's request. Earlier portable HTML and source ZIP snapshots remain outside the repository in `C:/Users/Jef/Desktop/jefresume/Portfolio_Exports`; these are not deployment inputs.
+
+The site uses Google Fonts with local fallbacks and includes print styles. Claims remain grounded in supplied project evidence.
